@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="3c20a845e66ba3579605bd135b5d2b3a7e675bd9371b5c1c2391190fe165d4ae.html">Create A User In Utest.Com</a></span>
+                > <span class="truncate-60"><a
+                    href="d06e479cd998b53670db2ba11f6ebca472f354567e808b98f93d479634f90ba1.html">Create a new profile complying all the requirements </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-01-2021 07:31</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Create A User In Utest.Com </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As User<br />
+I want to Create a new account in Utest
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="e4ef4831a220e0a9cbdbfec794f5c31b3fef2adf1cb8126df1cc35a6f525969c.html">Scenario1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Create a new profile complying all the requirements
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given that user wants create a new profile on Utest<br>When user complete all the require steps<br><table class='embedded'><thead><th>name</th><th>last_name</th><th>email</th><th>birth_day</th><th>birth_month</th><th>birth_year</th><th>language</th><th>city</th><th>postal</th><th>country</th><th>password</th></thead><tbody><tr><td>&lt;name&gt;</td><td>&lt;last_name&gt;</td><td>&lt;email&gt;</td><td>&lt;birth_day&gt;</td><td>&lt;birth_month&gt;</td><td>&lt;birth_year&gt;</td><td>&lt;language&gt;</td><td>&lt;city&gt;</td><td>&lt;postal&gt;</td><td>&lt;country&gt;</td><td>&lt;password&gt;</td></tr></tbody></table><br>Then the profile is create successful</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="2aef81998469812946dae15e4ba53ff22f04b1e9bce24e0b929e7ab19477d2b0.png" title=" Example: {name=Pablo, last_name=Hernandez, email=phernandezm@choucairtesting.com, birth_day=17, birth_month=May, birth_year=1992, language=Spanish, city=Medellin, postal=050016, country=Colombia, password=F911sJl71&lt;lWpy9({}" width="1366"/>
+                <img src="2aef81998469812946dae15e4ba53ff22f04b1e9bce24e0b929e7ab19477d2b0.png" title=" Given that user wants create a new profile on Utest" width="1366"/>
+                <img src="2aef81998469812946dae15e4ba53ff22f04b1e9bce24e0b929e7ab19477d2b0.png" title=" User open up" width="1366"/>
+                <img src="2aef81998469812946dae15e4ba53ff22f04b1e9bce24e0b929e7ab19477d2b0.png" title=" user opens the Automation utest page" width="1366"/>
+                <img src="42672e4052e16e368695eceeb003925a63ebfab61135946037fa629fb3819e83.png" title=" user clicks on Button to begin the creation of a new profile" width="1366"/>
+                <img src="42672e4052e16e368695eceeb003925a63ebfab61135946037fa629fb3819e83.png" title=" User open up (completed)" width="1366"/>
+                <img src="42672e4052e16e368695eceeb003925a63ebfab61135946037fa629fb3819e83.png" title=" Given that user wants create a new profile on Utest (completed)" width="1366"/>
+                <img src="934cc9e9cb58418d3ae328f49e744c0ba07786dda5e83d8457ca8392755c60b8.png" title=" When user complete all the require steps
+| name | last_name | email | birth_day | birth_month | birth_year | language | city | postal | country | password |
+| Pablo | Hernandez | phernandezm@choucairtesting.com | 17 | May | 1992 | Spanish | Medellin | 050016 | Colombia | F911sJl71&lt;lWpy9({ |" width="1366"/>
+                <img src="934cc9e9cb58418d3ae328f49e744c0ba07786dda5e83d8457ca8392755c60b8.png" title=" User fill" width="1366"/>
+                <img src="934cc9e9cb58418d3ae328f49e744c0ba07786dda5e83d8457ca8392755c60b8.png" title=" user enters 'Pablo' into Where we write the name" width="1366"/>
+                <img src="5dd84b84f11c31a9a150b9ed17ae0b520fbbfa9516bd0382fb833f19dfc19851.png" title=" user enters 'Hernandez' into Where we write the last name" width="1366"/>
+                <img src="07784f064e80c3d5ee1672812164fe8e1df6527403250f6e52714a9adc22e0bc.png" title=" user enters 'phernandezm@choucairtesting.com' into Where we write the Email" width="1366"/>
+                <img src="9894bb1c2742d8272c83f84e0b21b7fba43073fb7e505caa114276c7ab739289.png" title=" user clicks on Where we write the month of birth" width="1366"/>
+                <img src="2badeed716f601e7266420223b4155fcd52b69d8a08257ee407d9ac1eb4494b2.png" title=" user clicks on Where we write the day of birth" width="1366"/>
+                <img src="91b76653b942988ce0d21af4f85071871df7e4e20c1849fea38f71d3c1716eb2.png" title=" user clicks on Where we write the year of birth" width="1366"/>
+                <img src="50b04707c108f2ab90c6f109004b5cc1e972afdaf19ff14ce73e76463a50f4ee.png" title=" user clicks on Where we write the language" width="1366"/>
+                <img src="29a54aee6b228e1f90eb93acefe2e5e53e3b8107d2c866d7e18883be65462f5f.png" title=" user enters 'Spanish' into Where we write the language" width="1366"/>
+                <img src="298956c298be1a55bcd6846c27a0283b2a4230b013f3db35a6c9609b01d9a67c.png" title=" user types 'ENTER' in Where we write the language" width="1366"/>
+                <img src="3901867877e4c00ac3c7fcebd2413f3da3b63e3dc0f34f9c1685ecffdb4d730c.png" title=" user clicks on Button to continue to the next step" width="1366"/>
+                <img src="6863087364b908ff2ab31fb6aa47a1756cbdc8778be03a0f38be7485423911ee.png" title=" user enters 'Medellin' into Where we write the city of resident" width="1366"/>
+                <img src="24d70e5d2bd4dc408d21d50a51b3ded10f51ca753bc78cfc833e459c76ac8e38.png" title=" user types 'ARROW_DOWN' in Where we write the city of resident" width="1366"/>
+                <img src="2370eb28ebaf0e3e66259a7ef263e62e298c4bc17a8a748b995f5bc4f16ce2d3.png" title=" user types 'ENTER' in Where we write the city of resident" width="1366"/>
+                <img src="c2b7e05b815c5bd435b79d7b5be0b4e4e51bce98c88b2e433bcba2b0542d657e.png" title=" user enters '050016' into Where we write the postal code" width="1366"/>
+                <img src="e65e961bba04ad7c8cee53cf4857eedf08e6276c95c04eb5bcbac1a80911b1ea.png" title=" user clicks on Button to continue to the next step" width="1366"/>
+                <img src="d10a9e368b3b411986e880ab3fb887ee59969bbc97e73269c654d3f8bffd1717.png" title=" user clicks on Button to continue to the next step" width="1366"/>
+                <img src="4e95ff4b5ea35445ce60df5d7436de26aab11b7cbda2543dbc5955e3482cb796.png" title=" user enters 'F911sJl71&lt;lWpy9({' into Where we write the password" width="1366"/>
+                <img src="09bcd098e23c25fe28c7f2b911b9636ff375a381b6065d7eba44b6996bf9ed5c.png" title=" user enters 'F911sJl71&lt;lWpy9({' into Where we write the confirm the password" width="1366"/>
+                <img src="abd3ca5ff259825f8c90882c04c3f1421b3bfedec8ecee06f4c2fdea017cd901.png" title=" user clicks on check the information" width="1366"/>
+                <img src="3a9dd994a770432af88bd770e65bba1e0049f0cc3491539aac89be69d9974d72.png" title=" user clicks on check the read of terms and conditions" width="1366"/>
+                <img src="5bd94f7ca1aac0fee37c239db1f0203009bccaf8a1a5501f0c5f83d7d3235172.png" title=" user clicks on check that accept politics" width="1366"/>
+                <img src="5bd94f7ca1aac0fee37c239db1f0203009bccaf8a1a5501f0c5f83d7d3235172.png" title=" User fill (completed)" width="1366"/>
+                <img src="5bd94f7ca1aac0fee37c239db1f0203009bccaf8a1a5501f0c5f83d7d3235172.png" title=" When user complete all the require steps
+| name | last_name | email | birth_day | birth_month | birth_year | language | city | postal | country | password |
+| Pablo | Hernandez | phernandezm@choucairtesting.com | 17 | May | 1992 | Spanish | Medellin | 050016 | Colombia | F911sJl71&lt;lWpy9({ | (completed)" width="1366"/>
+                <img src="5bd94f7ca1aac0fee37c239db1f0203009bccaf8a1a5501f0c5f83d7d3235172.png" title=" Then the profile is create successful" width="1366"/>
+                <img src="5bd94f7ca1aac0fee37c239db1f0203009bccaf8a1a5501f0c5f83d7d3235172.png" title=" Then answer" width="1366"/>
+                <img src="5bd94f7ca1aac0fee37c239db1f0203009bccaf8a1a5501f0c5f83d7d3235172.png" title=" Then the profile is create successful (completed)" width="1366"/>
+                <img src="5bd94f7ca1aac0fee37c239db1f0203009bccaf8a1a5501f0c5f83d7d3235172.png" title=" Example: {name=Pablo, last_name=Hernandez, email=phernandezm@choucairtesting.com, birth_day=17, birth_month=May, birth_year=1992, language=Spanish, city=Medellin, postal=050016, country=Colombia, password=F911sJl71&lt;lWpy9({} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
